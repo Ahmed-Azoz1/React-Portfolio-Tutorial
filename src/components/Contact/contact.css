@@ -1,0 +1,150 @@
+.contact-us{
+    justify-content: space-between;
+}
+
+
+.contact-us .section-left .title{
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: var(--title);
+}
+
+.contact-us .section-left .title .icon{
+    margin-right:10px ;
+}
+
+.contact-us .section-left .subtitle{
+    font-size: 0.9rem;
+    color: var(--subtitle);
+    margin-bottom: 4rem;
+}
+
+.contact-us .section-left .input-group{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.contact-us .section-left .input-group.message{
+    height: 200px;
+}
+
+.contact-us .section-left .input-group.message textarea {
+    resize: none;
+}
+
+.contact-us .section-left .input-group .input-label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    color: rgba(93,188,252,0.8);
+    z-index: 1;
+}
+
+
+.contact-us .section-left .input-group .input-field{
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(93,188,252,0.3);
+    background: #272530;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all .3s;
+    color: #fff;
+}
+
+.contact-us .section-left .input-group .input-label::before{
+    content: "";
+    height: 5px;
+    background-color:  #272530;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-us .section-left .input-group .input-field:focus{
+    border: 2px solid var(--blue);
+}
+
+.contact-us .section-left .input-group .input-field:focus+label{
+    top: -11px;
+    color: var(--blue);
+    font-size: 14px;
+}
+
+.contact-us .section-left .input-group .input-field::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.contact-us .section-left .input-group .input-field:focus::placeholder{
+    opacity: 1;
+    animation-delay:0.2s ;
+} 
+
+.contact-us .section-left .submit{
+    opacity: 0.7;
+    font-size: 1rem;
+    border: 1px solid var(--blue);
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background-color: rgba(36,37,46,1);
+    color: var(--title);
+    transition: 0.3s;
+}
+
+.contact-us .section-left .submit:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* light Mode */
+
+.light .contact-us .section-left .input-group .input-label{
+    color: rgba(36,37,46,1);
+}
+
+.light .contact-us .section-left .input-group .input-field{
+    background-color: rgba(255,255,255,0.162);
+    border: 1px solid rgba(128,128,128,0.451);
+    box-shadow: 1px 1px 1px rgba(73,73,75,0.105);
+    color: #232324;
+}
+
+.light .contact-us .section-left .input-group .input-label::before{
+    background-color: rgba(255,255,255,1);
+}
+
+.light .contact-us .section-left .input-group .input-field:focus{
+    border: 2px solid var(--blue);
+}
+
+
+.light .contact-us .section-left .submit{
+    border: 1px solid rgba(128,128,128,0.451);
+    background-color: rgba(255,255,255,0.162);
+    box-shadow: 1px 1px 1px rgba(73,73,75,0.105);
+}
+
+.light .contact-us .section-left .submit:hover{
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid var(--blue);
+}
+
+
+
+@media(max-width:1000px){
+    .contact-us.flex{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,113 @@
+/* ==================================
+    table of contents
+=====================================
+*/
+
+/*
+    1. Section Left
+    2. Section Right => Animation
+*/
+
+
+
+section.hero{
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+/* ==================================
+    1.Section Left
+=====================================
+*/
+
+section.hero .section-left{
+    flex-grow: .5;
+}
+
+section.hero .section-left .parent-avatar.flex{
+    align-items: end;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+section.hero .parent-avatar .avatar{
+    width: 95px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 1px 1px 40px #fff inset;
+}
+
+section.hero .parent-avatar .icon-right{
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+section.hero .title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+    color: var(--title);
+}
+
+section.hero .subtitle{
+    font-size: .9rem;
+    color: var(--subtitle);
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+section.hero .icons{
+    gap: 1.5rem;
+}
+
+section.hero .icons .icon{
+    color: var(--subtitle);
+    font-size: 1.5rem;
+}
+
+section.hero .icons .icon:hover{
+    color: var(--icon-hover);
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* ==================================
+    2.Section Right => Animation
+=====================================
+*/
+
+.hero .section-right{
+    width: 100%;
+}
+
+.hero .section-right .animation{
+    width: 60%;
+    translate: 200px;
+}
+
+@media(max-width:1400px){
+    section.hero{
+        flex-direction: column;
+    }
+    .hero .section-right{
+        width: 100%;
+    }
+    .hero .section-right .animation{
+        width: 50%;
+        translate: 180px;
+    }
+}
+
+
+@media(max-width:600px){
+    .hero .section-right{
+        width: 70%;
+    }
+    .hero .section-right .animation{
+        width: 100%;
+        translate: 0;
+    }
+}

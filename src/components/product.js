@@ -1,0 +1,17 @@
+export const myProjects = [
+    {id:1,Title:"Html Project",category:"Html",imgPath:"./1.jpeg"},
+    {id:2,Title:"css Project",category:"css",imgPath:"./2.jpg"},
+    {id:3,Title:"js Project",category:"js",imgPath:"./3.png"},
+    {id:4,Title:"react Project",category:"react",imgPath:"./4.png"},
+    {id:5,Title:"node Project",category:"node",imgPath:"./5.jpeg"},
+    {id:6,Title:"Html Project",category:"Html",imgPath:"./6.png"},
+    {id:7,Title:"css Project",category:"css",imgPath:"./1.jpeg"},
+    {id:8,Title:"js Project",category:"js",imgPath:"./2.jpg"},
+    {id:9,Title:"react Project",category:"react",imgPath:"./3.png"},
+    {id:10,Title:"node Project",category:"node",imgPath:"./4.png"},
+    {id:11,Title:"Html Project",category:"Html",imgPath:"./5.jpeg"},
+    {id:12,Title:"css Project",category:"css",imgPath:"./1.jpeg"},
+    {id:13,Title:"js Project",category:"js",imgPath:"./6.png"},
+    {id:14,Title:"react Project",category:"react",imgPath:"./2.jpg"},
+    {id:15,Title:"node Project",category:"node",imgPath:"./3.png"},
+]
